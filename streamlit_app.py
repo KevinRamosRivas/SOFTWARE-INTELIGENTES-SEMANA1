@@ -26,7 +26,11 @@ def generar_respuesta(prompt):
     message = completions.choices[0].text #obtenemos el texto generado por el modelo
     return message #devolvemos el texto generado por el modelo
 
-st.title("IA de genera presentacion para perfil de linkedin")
+st.title("IA que genera presentacion para perfil de linkedin")
+
+# añadimos el logo de linkedin
+
+st.image("https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw", width=200)
 
 name = st.text_input("Ingresa tu nombre:", key='nombre')
 
