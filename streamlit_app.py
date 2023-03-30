@@ -1,10 +1,11 @@
 import openai
 import streamlit as st
 
-# Establecemos nuestra API key de OpenAI
+# Establecemos API key de OpenAI
 openai.api_key = "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"
 
-# Función que utiliza la API de OpenAI para generar una respuesta basada en el prompt que le pasamos
+# Definimos la función que utiliza la API de OpenAI para generar una respuesta basada
+# en el prompt que le pasamos
 def generar_respuesta(prompt):
     completions = openai.Completion.create(
         engine="text-davinci-003",  # modelo de lenguaje de OpenAI
@@ -42,7 +43,8 @@ language = st.text_input("Ingresa los idiomas que hablas:", key='language')
 # Creamos el prompt a partir de los datos que el usuario ingresó
 prompt = "Haz un perfil de LinkedIn interesante sin exagerar para " + name + " con las siguientes skills: " + skills + " y soft skills: " + soft_skills + " y nivel de educacion: " + education + " y metas profesionales: " + goals + " y habla " + language + "."
 
-# Generamos la respuesta utilizando la API de OpenAI cuando el usuario presiona el botón "Enviar"
+# Generamos la respuesta utilizando la API de OpenAI cuando el usuario 
+# presiona el botón "Enviar"
 if st.button("Enviar", key='submit'):
     response = generar_respuesta(prompt)
     st.success(response)
