@@ -28,6 +28,17 @@ def generar_respuesta(prompt):
 
 st.title("IA que genera presentacion para perfil de linkedin")
 
+st.text("Hola soy una IA que te ayuda a generar una presentacion para tu perfil de linkedin, a continuacion te pedire que me des algunos datos para generar tu presentacion.")
+
+st.markdown("  ")
+# integrantes
+st.markdown("Integrantes:")
+st.markdown("* Araujo Santillan, Pedro")
+st.markdown("* Balceda Delgado, Adriana")
+st.markdown("* Tocas Chipana, Nel")
+st.markdown("* Ramos Rivas, Kevin")
+st.markdown("* Zenobio Pariasca, Edgar")
+
 # añadimos el logo de linkedin
 
 st.image("https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw", width=200)
