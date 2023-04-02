@@ -3,7 +3,7 @@ import streamlit as st
 
 
 # Establecemos API key de OpenAI
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+openai.api_key = st.secrets["openai_api_key"]
 
 # Definimos la función que utiliza la API de OpenAI para generar una respuesta basada
 # en el prompt que le pasamos
