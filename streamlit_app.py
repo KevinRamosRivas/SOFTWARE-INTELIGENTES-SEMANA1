@@ -42,7 +42,7 @@ goals = st.text_input("Ingresa tus metas profesionales:", key='goals')
 language = st.text_input("Ingresa los idiomas que hablas:", key='language')
 
 # Creamos el prompt a partir de los datos que el usuario ingresó
-prompt = "Haz un perfil de LinkedIn interesante sin exagerar para " + name + " con las siguientes skills: " + skills + " y soft skills: " + soft_skills + " y nivel de educacion: " + education + " y metas profesionales: " + goals + " y habla " + language + "."
+prompt = "Haz un perfil de LinkedIn interesante sin exagerar para " + name + " con las siguientes skills: " + skills + " y soft skills: " + soft_skills + " y nivel de educacion: " + education + " y metas profesionales: " + goals + " y habla " + language + ", usa un estilo formal pero interesante."
 
 # Generamos la respuesta utilizando la API de OpenAI cuando el usuario 
 # presiona el botón "Enviar"
