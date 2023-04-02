@@ -5,8 +5,8 @@ import streamlit as st
 
 
 
-
-openai.api_key = "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"
+openai.api_key = st.secrets["api_key_openai"] 
+# openai.api_key = "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"
 
 
 
